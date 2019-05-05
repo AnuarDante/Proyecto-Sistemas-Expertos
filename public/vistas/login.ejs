@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ROCKSOURCECODE</title>
+  <!-- Font Awesome 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style-login.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark gris scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand letralogo" href="/"><strong>ROCKSOURCECODE</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="fa mr-1 fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="fa mr-1 fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="fa mr-1 fa-google"></span>
+                            </a>
+                        </li>      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Modal: Login / Register Form-->
+        <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+                <div class="modal-content">
+                    <!--Modal cascading tabs-->
+                    <div class="modal-c-tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                            <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i>
+                                Iniciar Seccion</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i>
+                                Registrarte</a>
+                            </li>
+                        </ul>
+            
+                    <!-- Tab panels -->
+                        <div class="tab-content">
+                        <!--Panel 7-->
+                            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                                <!--Body-->
+                                <div class="modal-body mb-1">
+                                    <div id="errorlogin"></div>
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                        <label data-error="Error" data-success="Bien" for="modalLRInput10">Correo</label>
+                                    </div>
+                
+                                    <div class="md-form form-sm mb-4">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                        <label data-error="Error" data-success="Bien" for="modalLRInput11">Tu password</label>
+                                    </div>
+                                    <div class="text-center mt-2">
+                                        <button class="btn btn-primary rounded-pill" id="btn-login" href="/singin">Iniciar <i class="fa fa-sign-in ml-1"></i></button>
+                                    </div>
+                                </div>
+                                <!--Footer-->
+                                <div class="modal-footer">
+                                    <div class="options text-center text-md-right mt-1">
+                                    <p>Olvidaste tu<a href="#" class="blue-text">Password?</a></p>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto"><i class="fa fa-facebook"></i></button>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto"><i class="fa fa-google"></i></button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cerrar</button>
+                                </div>
+            
+                            </div>
+                                <!--/.Panel 7-->
+                    
+                                <!--Panel 8-->
+                            <div class="tab-pane fade" id="panel8" role="tabpanel">
+                    
+                                <!--Body-->
+                                <div class="modal-body">
+                                    <div id="usuarioexitoso"></div>
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                        <label data-error="Error" data-success="Bien" for="modalLRInput12">Tu email</label>
+                                    </div>
+                    
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                        <label data-error="Error" data-success="Bien" for="modalLRInput13">Tu password</label>
+                                    </div>
+                    
+                                    <div class="md-form form-sm mb-4">
+                                        <i class="fa fa-user prefix"></i>
+                                        <input type="text" id="modalLRInput14" class="form-control form-control-sm validate">
+                                        <label data-error="Error" data-success="Bien" for="modalLRInput14">Nombre de usuario</label>
+                                    </div>
+                    
+                                    <div class="text-center form-sm mt-2">
+                                        <button class="btn btn-primary rounded-pill" id="guardarUsuario" href="/singup">Registrar <i class="fa fa-sign-in ml-1"></i></button>
+                                    </div>
+                    
+                                </div>
+                                <!--Footer-->
+                                <div class="modal-footer">
+                                    <div class="options text-right">
+                                        <button type="button" class="btn btn-outline-info waves-effect ml-auto"><i class="fa fa-facebook"></i></button>
+                                        <button type="button" class="btn btn-outline-info waves-effect ml-auto"><i class="fa fa-google"></i></button>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            <!--/.Panel 8-->
+                        </div>     
+                    </div>
+                </div>
+            <!--/.Content-->
+            </div>
+        </div>
+        <!--Modal: Login / Register Form-->
+            <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="row mt-5 d-flex justify-content-center text-center">
+                    <div class="col-md-10">
+                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">
+                            Registrate/<br>Inicia Seción 
+                        </h2>
+                        <hr class="hr-light">
+                    </div>
+                </div>
+            </div>
+        
+        <div class="text-center view overlay" id="log">
+            <a href="" class="btn my-3 rgba-indigo-strong text-uppercase rounded-pill" data-toggle="modal" data-target="#modalLRForm">LogIn/Registrate</a>
+        </div>
+    </main>
+
+    <footer class="mt-5 pt-4 text-center col-xl-12">
+        <div class="container ml-auto mr-auto">
+            <div class="row pt-lg-3 text-white text-center">
+                <div class="copyright mt-4 text-white">
+                    <h6>© 2019 Informal. All Rights Reserved | Design by <a href="#">ROCKSOURCECODE</a> </h6>
+                </div>
+            </div>
+        </div>        
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <!-- Font Awesome JavaScript
+    -->
+    <script type="text/javascript" src="../js/controladorlogin.js"></script>
+    <script>new WOW().init();</script>
+</body>
+
+</html>

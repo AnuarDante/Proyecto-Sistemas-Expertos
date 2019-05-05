@@ -1,0 +1,71 @@
+<html>
+    <head>
+      <title>Code Editor</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="css/mdb.min.css" rel="stylesheet">
+      <!-- Your custom styles (optional) -->
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body id="body1">
+
+      <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark grisc scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand letralogo" href="/"><strong>ROCKSOURCECODE</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/inicio">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/perfil">Perfil</a>
+                    </li>
+                    </ul>
+
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <button href="#" id="btnguardar" class="nav-link btn-outline-light">
+                                Guardar <span class="fa mr-1 fa-floppy-o"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      <div class="mt-4">
+        
+      </div>
+      <textarea class="mt-5" id="html" placeholder="HTML"></textarea>
+      <textarea class="mt-5" id="css" placeholder="CSS"></textarea>
+      <textarea class="mt-5" id="js" placeholder="JavaScript"></textarea>
+      <iframe id="code"></iframe>
+
+      <!-- JQuery -->
+      <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.js"></script>
+      <!-- Font Awesome JavaScript
+        <script type="text/javascript" src="js/all.min.js"></script>
+      -->
+      <!-- SCRIPTS -->
+      <script type="text/javascript" src="../js/controladorInicio.js"></script>
+      <script type="text/javascript" src="../js/controladorCompilador.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+      <script>new WOW().init();</script>
+
+    </body>
+  </html>
