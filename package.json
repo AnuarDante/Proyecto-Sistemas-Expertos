@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto de la clase de Sistemas Expertos UNAH",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Velasquez",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.5.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "save": "^2.3.3"
+  }
+}
