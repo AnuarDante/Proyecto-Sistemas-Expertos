@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#body1{
+    text-align: center;
+}
+
+@font-face{
+    font-family: nebu;
+    src: url(../font/abite.ttf);
+}
+
+.letralogo{
+    font-family: nebu;
+}
+
+#desarrolladores{
+    position: absolute;
+}
+
+#cont{
+    position: relative;
+}
+
+#navegar{
+    background-color: white;
+}
+
+.fondo{
+    background-color: rgb(29, 28, 28)!important
+}
+
+.gris{
+    background-color: rgba(29, 28, 28, 0.021);
+}
+.grisc{
+    background-color: rgba(29, 28, 28, 1);
+}
+
+.top-nav-collapse{
+    background-color: rgba(29, 28, 28, 0.705)!important;
+}
+
+textarea {
+    width: 32%;
+    float: top;
+    min-height: 250px;
+    overflow: scroll;
+    margin: auto;
+    display: inline-block;
+    background: #f4f4f9;
+    outline: none;
+    font-family: Courier, sans-serif;
+    font-size: 14px;
+  }
+  
+iframe {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    height: 35em;
+}

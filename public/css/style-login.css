@@ -1,0 +1,42 @@
+
+@font-face{
+    font-family: nebu;
+    src: url(../font/abite.ttf);
+}
+
+.letralogo{
+    font-family: nebu;
+}
+
+.gris{
+    background-color: rgba(29, 28, 28, 0.815);
+}
+
+#log{
+    margin-top: 1rem!important;
+}
+
+body{
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-thumb{
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.example-1 {
+position: relative;
+overflow-y: scroll;
+height: 70vh; }
+
+.example-2 {
+    position: relative;
+    overflow-y: scroll;
+    height: 130px;
+    border-radius: 50px;
+}
